@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/", // Папка для выходных файлов компиляции TypeScript
+      "noImplicitAny": true, // Запрещает использование неявного типа `any` для повышения безопасности типов
+      "module": "ESNext", // Указывает использование модуля ECMAScript с последним стандартом для экспорта и импорта
+      "target": "es5", // Указывает компиляцию в ECMAScript 5, чтобы обеспечить совместимость с более старыми браузерами
+      "jsx": "react-jsx", // Указывает тип трансформации JSX в React
+      "allowJs": true, // Разрешает компиляцию JavaScript файлов вместе с TypeScript
+      "moduleResolution": "node", // Использует Node.js-совместимый способ разрешения модулей
+      "allowSyntheticDefaultImports": true, // Разрешает импорт без использования `import * as ...` для модулей без `default`-экспорта
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./src/*"]
+      },
+      "esModuleInterop": true // Обеспечивает совместимость с CommonJS-модулями, добавляя `__esModule`
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS" // Указывает TypeScript-использование CommonJS для Node.js, например, в ts-node
+      }
+    }
+  }
+  
